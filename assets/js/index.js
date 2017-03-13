@@ -34,7 +34,7 @@ crystalArray();
 
 // Display the random number on the screen
 
-$("#random-number").html("   " + computerChoice);
+$("#random-number").text(computerChoice);
 
 
 // When the player clicks on a crystal. This will add a specific amount of points to the player's total score. 
@@ -49,13 +49,12 @@ $("#random-number").html("   " + computerChoice);
         if (scoreBoard.notifier === computerChoice) {
             //Which increases wins
             scoreBoard.wins++;
-            $("#wins").html(scoreBoard.wins);
+            $("#wins").text(scoreBoard.wins);
             restartGame();
         // The player loses if their score goes above the random number.
         } else if (scoreBoard.notifier > computerChoice) {
             scoreBoard.losses++;
-            alert("You lose");
-            $("#losses").html(scoreBoard.losses);
+            $("#losses").text(scoreBoard.losses);
             restartGame();
         }
     });
@@ -122,8 +121,8 @@ $("#random-number").html("   " + computerChoice);
     function restartGame() {
         //displaying wins and losses
        
-        // $("#wins").text(scoreBoard.wins);
-        // $("#losses").text(scoreBoard.losses);
+        $("#wins").text(scoreBoard.wins);
+        $("#losses").text(scoreBoard.losses);
        
         //set the counter back to 0
         scoreBoard.notifier = 0;
@@ -131,7 +130,7 @@ $("#random-number").html("   " + computerChoice);
         $("#notifier").text(scoreBoard.notifier);
         //generate a new random number
         computerChoice = randomChoice(120, 19);
-        $("#random-number").html("   " + computerChoice);
+        $("#random-number").text(computerChoice);
         //clean the array
         crystals = [];
         //trigger function again to generate new chrystal numbers
