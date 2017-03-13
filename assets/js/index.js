@@ -120,11 +120,7 @@ $("#random-number").html("   " + computerChoice);
 
 // restarting the game
     function restartGame() {
-        //displaying wins and losses
-       
-        // $("#wins").text(scoreBoard.wins);
-        // $("#losses").text(scoreBoard.losses);
-       
+           
         //set the counter back to 0
         scoreBoard.notifier = 0;
         //print the reset counter var to the html

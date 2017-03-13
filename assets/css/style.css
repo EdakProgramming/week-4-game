@@ -2,3 +2,47 @@ img{
 	height: 100px;
 	width: 100px;
 }
+
+body {
+    background-image: url("war.png");
+    background-color: #00CED1;
+    font-size: 20px;
+}
+
+.main-title{
+	color: white;
+	background-color:coral;
+	width: 300px;
+}
+
+.instructions {
+	font-size: 16px;
+	background-color: #F9E79F;
+	color: green;
+	width:600px;
+}
+
+.goal-score{
+	font-size: 24px;
+	width: 300px;
+	background-color: #2ECC71;
+	color:#76448A;
+	float: left;
+	margin-right: 20px;
+}
+
+.counter{
+	ont-size: 24px;
+	width: 300px;
+	background-color: #D4EFDF;
+	color:#17202A;
+	float: left;
+	margin-bottom: 40px;	
+}
+
+#gems{
+	clear:both;
+	
+	margin-right: 0;
+}
+
