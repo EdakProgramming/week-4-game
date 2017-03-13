@@ -4,14 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TBD</title>
+    <title>Crystal Collector Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"></link>
 </head>
+
 <body>
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
+    <h1 class="main-title">Crystal Collector</h1>
+    
+    <section class="instructions">
+        <p>You will be given a random nuber at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your local score.</p>
+        <br>
+        <p>You win the game by matching your total score to random number. You lose the game if your total score goes above teh random number.</p>
+        <br>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </section>
+    
+    <div class="instructions">The number to match is:<small id="random-number"></small></div>
+    
+    <aside class="counter">
+        <div>Your total score is: <small id="notifier"></small></div>
+        <div>Wins:<small class="wins"></small></div>
+        <div>Losses:<small class="losses"></small></div>
+    </aside>
+
+    <section class="row" id="gems">
+    	<ul class="col-xs-3" id="ruby"><img src="assets/images/ruby.jpg" alt=""></ul>
+		<ul class="col-xs-3" id="sapphire"><img src="assets/images/sapphire.jpg" alt=""></ul>
+		<ul class="col-xs-3" id="diamond"><img src="assets/images/diamond.jpg" alt=""></ul>
+		<ul class="col-xs-3" id="emerald"><img src="assets/images/emerald.jpg" alt=""></ul>
+    </section>
+
+    <div class="score-counter">
+		
+		
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
+<!-- Select background image -->
+<!-- style each section -->
